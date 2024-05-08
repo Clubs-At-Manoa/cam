@@ -30,6 +30,7 @@ const Landing = () => (
         <p>Student organizations, associations, or clubs that are formed to meet special interests of certain groups of students on campus</p>
       </Col>
       <Col xs={4}>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <Link size={75} />
         <h5>Helpful Links</h5>
         <p> </p>
