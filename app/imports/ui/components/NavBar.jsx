@@ -26,7 +26,8 @@ const NavBar = () => {
               <Nav.Link id="homepage" as={NavLink} to="/home" key="home">Home</Nav.Link>,
               <Nav.Link id="profiles" as={NavLink} to="/profiles" key="profiles">Filter</Nav.Link>,
             ]) : ''}
-            <Nav.Link id="list-stuff-nav" as={NavLink} to="/list" key="list">Clubs</Nav.Link>
+            <Nav.Link id="list-stuff-nav" as={NavLink} to="/list" key="list">Clubs</Nav.Link>,
+            <Nav.Link as={NavLink} to="/clubs" key="clubs">Clubs</Nav.Link>,
             <Nav.Link id="interests" as={NavLink} to="/interests" key="interests">Interests</Nav.Link>
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
               <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>,
@@ -37,24 +38,20 @@ const NavBar = () => {
           <Nav className="justify-content-end">
             {currentUser === '' ? (
               <NavDropdown id="login-dropdown" title="Login">
-                <NavDropdown.Item id="login-dropdown-sign-in" as={NavLink} to="/signin">
+                <NavDropdown.Item as={NavLink} to="/signin">
                   <PersonFill />
-                  Sign
-                  in
+                  Sign in
                 </NavDropdown.Item>
-                <NavDropdown.Item id="login-dropdown-sign-up" as={NavLink} to="/signup">
+                <NavDropdown.Item as={NavLink} to="/signup">
                   <PersonPlusFill />
-                  Sign
-                  up
+                  Sign up
                 </NavDropdown.Item>
               </NavDropdown>
             ) : (
               <NavDropdown id="navbar-current-user" title={currentUser}>
-                <NavDropdown.Item id="navbar-sign-out" as={NavLink} to="/signout">
+                <NavDropdown.Item as={NavLink} to="/signout">
                   <BoxArrowRight />
-                  {' '}
-                  Sign
-                  out
+                  Sign out
                 </NavDropdown.Item>
               </NavDropdown>
             )}
