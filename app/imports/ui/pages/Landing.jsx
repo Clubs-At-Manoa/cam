@@ -8,8 +8,10 @@ const Landing = () => (
     <Row className="align-middle text-center">
       <Col xs={12} className="d-flex flex-column justify-content-center">
         <h1>Welcome to Clubs At Manoa</h1>
-        <p>Organizations and interest of U.H.M students</p>
-        <p>Start by Making a profile and select your interest or loggin in to an existing account</p>
+        <h4 style={{ paddingBottom: '20px', color: 'black' }}> Over 150 Registered Independent Organizations (RIOs) at the University of Hawaiʻi at Mānoa <br />
+          Serving the campus and greater community
+        </h4>
+        <h4>Connect to people and organizations with shared interests!</h4>
       </Col>
       <Col xs={12}>
         <Image src="/images/Manoa_4.jpg" width="800px" />

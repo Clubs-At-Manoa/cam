@@ -4,16 +4,9 @@
 /* Set up some CSS variables to theme the application. */
 :root {
   --matr-navbar-bg: #376551;
-  --matr-navbar-bg-rgb: 2, 71, 49;
+  --matr-navbar-bg-rgb: 55, 101, 81;
   --matr-navbar-text-color: white;
   --matr-navbar-highlight-text: var(--bs-gray-500);
-}
-
-.navbar {
-  /* Assuming you want to use the RGB color for the background */
-background-color: rgb(var(--matr-navbar-bg-rgb));
-/* Apply the text color custom property */
-color: var(--matr-navbar-text-color);
 }
 
 /* Change bootstrap variable values.
@@ -21,8 +14,15 @@ color: var(--matr-navbar-text-color);
  */
 body {
   --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  --bs-light-rgb: var(--matr-navbar-bg-rgb);
 }
-
+body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--matr-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-color: var(--matr-navbar-text-color);
+  --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
+}
 /* Set the alert background on the signin and signup pages. */
 #signin-page .alert-light, #signup-page .alert-light {
   --bs-alert-bg: var(--matr-navbar-bg);
@@ -34,4 +34,13 @@ body {
   color: var(--bs-dark);
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+footer, footer a {
+  color: var(--matr-navbar-text-color);
+}
+
+.reset-margins {
+  margin-top: 0;
+  margin-bottom: 0;
 }
