@@ -76,4 +76,3 @@ if (ClubsInterests && ClubsInterests.userPublicationName && ClubsInterests.colle
 } else {
   console.error('Error publishing ProjectsInterests: missing data');
 }
-

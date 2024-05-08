@@ -7,16 +7,11 @@ import { Profiles } from '../../api/profiles/Profiles';
 import { ProfilesClubs } from '../../api/profiles/ProfilesClubs';
 import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
 import { Interests } from '../../api/Interests/Interests';
-
 /* eslint-disable no-console */
-function addData(data) {
-  try {
-    console.log(`Adding: ${data.name} (${data.owner})`);
-    Stuffs.collection.insert(data);
-  } catch (error) {
-    console.error(`Error adding stuff ${data.name}:`, error);
-  }
-}
+const addData = (data) => {
+  console.log(`  Adding: ${data.name} (${data.owner})`);
+  Profiles.collection.insert(data);
+};
 
 function createUser(email, role) {
   const userID = Accounts.createUser({ username: email, email, password: 'foo' });
@@ -45,6 +40,35 @@ function addProfile({ firstName, lastName, bio, title, interests, projects, pict
   interests.map(interest => addInterest(interest));
 }
 
+/** Define a new club. Error if club already exists.
+function addClub({ name, approvedDate, expirationDate, clubType, purpose, clubManager, contact, interests }) {
+  console.log(`Defining club ${name}`);
+  Clubs.collection.insert({ name, approvedDate, expirationDate, clubType, purpose, clubManager, contact, interests });
+  interests.forEach(interest => ClubsInterests.collection.insert({ project: name, interest }));
+  interests.forEach(interest => addInterest(interest));
+} */
+
+/** Define an interest.  Has no effect if interest already exists. */
+/**
+function addInterest(interest) {
+  Interests.collection.update({ name: interest }, { $set: { name: interest } }, { upsert: true });
+} */
+
+/** Defines a new user and associated profile. Error if user already exists. */
+/**
+function addProfile({ firstName, lastName, bio, title, interests, projects, picture, email, role }) {
+  console.log(`Defining profile ${email}`);
+  // Define the user in the Meteor accounts package.
+  createUser(email, role);
+  // Create the profile.
+  Profiles.collection.insert({ firstName, lastName, bio, title, picture, email });
+  // Add interests and projects.
+  interests.map(interest => ProfilesInterests.collection.insert({ profile: email, interest }));
+  projects.map(project => ProfilesClubs.collection.insert({ profile: email, project }));
+  // Make sure interests are defined in the Interests collection if they weren't already.
+  interests.map(interest => addInterest(interest));
+} */
+
 /** Define a new club. Error if club already exists. */
 function addClub({ name, approvedDate, expirationDate, clubType, purpose, clubManager, contact, interests }) {
   console.log(`Defining club ${name}`);
@@ -61,42 +85,24 @@ if (Profiles.collection.find().count() === 0) {
   }
 }
 
-// For example, ensure a club with the same name doesn't exist before inserting
-function addClub(club) {
-  console.log(`Attempting to define club ${club.name}`);
-  const exists = Clubs.collection.findOne({ name: club.name });
-  if (!exists) {
-    try {
-      Clubs.collection.insert(club);
-      club.interests.forEach(interest => {
-        ClubsInterests.collection.insert({ club: club.name, interest });
-        addInterest(interest);
-      });
-      console.log(`Club ${club.name} added successfully.`);
-    } catch (error) {
-      console.error(`Error inserting club ${club.name}:`, error);
-    }
+/** Initialize DB if it appears to be empty (i.e., no users defined.) */
+if (Meteor.users.find().count() === 0) {
+  console.log('meteor default');
+  if (Meteor.settings.defaultClubs && Meteor.settings.defaultProfiles) {
+    console.log('Creating the default profiles');
+    Meteor.settings.defaultProfiles.forEach(profile => addProfile(profile));
+    console.log('Creating the default clubs');
+    Meteor.settings.defaultClubs.forEach(club => addClub(club));
   } else {
-    console.log(`Club ${club.name} already exists.`);
+    console.log('Cannot initialize the database! Please invoke Meteor with a settings file.');
   }
 }
 
-Meteor.startup(() => {
-  if (Meteor.users.find().count() === 0) {
-    console.log('No users found, creating default profiles and users.');
-    Meteor.settings.defaultProfiles?.forEach(profile => addProfile(profile));
-  }
-
-  if (Clubs.collection.find().count() === 0) {
-    console.log('No clubs found, inserting default clubs.');
-    Meteor.settings.defaultClubs.forEach(club => addClub(club));
-  }
-
-  if (Meteor.settings.loadAssetsFile && Meteor.users.find().count() < 7) {
-    const assetsFileName = 'data.json';
-    console.log(`Loading additional data from private/${assetsFileName}`);
-    const jsonData = JSON.parse(Assets.getText(assetsFileName));
-    jsonData.profiles.forEach(profile => addProfile(profile));
-    jsonData.clubs.forEach(club => addClub(club));
-  }
-});
+/** If the loadAssetsFile field in settings.development.json is true, then load data from a private file. */
+if (Meteor.settings.loadAssetsFile && Meteor.users.find().count() < 7) {
+  const assetsFileName = 'data.json';
+  console.log(`Loading data from private/${assetsFileName}`);
+  const jsonData = JSON.parse(Assets.getText(assetsFileName));
+  jsonData.profiles.forEach(profile => addProfile(profile));
+  jsonData.clubs.forEach(club => addClub(club)); // Assuming the structure includes clubs.
+}
