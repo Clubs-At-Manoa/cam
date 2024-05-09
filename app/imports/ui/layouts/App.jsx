@@ -20,7 +20,6 @@ import CreateProfile from '../pages/CreateProfile';
 import EditProfile from '../pages/EditProfile';
 import Clubs from '../pages/Clubs';
 
-
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
   const { ready } = useTracker(() => {
