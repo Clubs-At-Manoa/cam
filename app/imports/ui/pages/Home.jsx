@@ -6,7 +6,7 @@ const Home = () => (
   <Container id="landing-page" fluid className="py-3">
     <Row className="align-middle text-center">
       <Col xs={4}>
-        <Image roundedCircle src="/images/meteor-logo.png" width="150px" />
+        <Image roundedCircle src="/images/logo.png" width="150px" />
       </Col>
       <Col xs={4} className="d-flex flex-column justify-content-center">
         <h1>Welcome to Clubs at Manoa</h1>
