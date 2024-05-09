@@ -27,3 +27,4 @@ class ClubsCollection {
 }
 
 export const Clubs = new ClubsCollection();
+export const ClubsSchema = Clubs.schema;
