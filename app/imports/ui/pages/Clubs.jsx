@@ -73,10 +73,10 @@ const ClubsPage = () => {
       Meteor.subscribe(Profiles.userPublicationName),
     ];
     console.log('Subscription states:', handles.map(handle => handle.ready())); // Logging the readiness of each subscription
-    const projects = Clubs.collection.find().fetch();
-    console.log('Fetched projects:', projects); // Log fetched projects
+    const fetchedProjects = Clubs.collection.find().fetch(); // Renamed variable to avoid shadowing
+    console.log('Fetched projects:', fetchedProjects); // Log fetched projects
     return {
-      projects,
+      projects: fetchedProjects, // Use the new variable name
       ready: handles.every(handle => handle.ready()),
     };
   }, []);
