@@ -11,7 +11,7 @@
       "name": "8bit (8 Business Information & Technology)",
       "approvedDate": "3/4/24",
       "expirationDate": "9/30/24",
-      "clubType": "",
+      "clubType": "Service",
       "purpose": "Software solution organization that provides software services to local business or on-campus university departments. Specific software services include but are not limited to : website re-designs, organization management dashboards, mobile applications, data management systems etc. We will also teach practical in real life technical skills in the fields of software development, design and business.",
       "clubManager": "",
       "contact": "lmig4@hawaii.edu",
@@ -28,7 +28,7 @@
       "clubManager": "",
       "contact": "aagag@hawaii.edu",
       "interests": [
-        "Accounting"
+        "Academic/Professional"
       ]
     },
     {
@@ -40,7 +40,7 @@
       "clubManager": "",
       "contact": "aagag@hawaii.edu",
       "interests": [
-        "Politics"
+        "Political"
       ]
     },
     {
@@ -52,7 +52,247 @@
       "clubManager": "",
       "contact": "aagag@hawaii.edu",
       "interests": [
-        "Medicine"
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "AECT- Hawaii at Manoa (AECT-HI)",
+      "dateApproved": "10/19/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The AECT-HI Chapter is organized to provide a campus-based focal point for individuals interested in using technology in training and education in association with the University of Hawaii at Manoa Department of Learning Design and Technology (LTEC). The purpose of the Chapter is to provide professional development activities, leadership opportunities, and social interaction for its Members. The mission of AECT-HI is to build a network among LTEC students, faculty, and alumni. Further AECT-HI aims to foster interaction and partnerships with AECT Chapters at other universities and the global AECT community.",
+      "clubManager": "",
+      "contact": "cartermd@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "Aikido at UHM",
+      "dateApproved": "9/25/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Sports/Leisure",
+      "purpose": "We practice Aikido.",
+      "clubManager": "",
+      "contact": "halliday@hawaii.edu",
+      "interests": [
+        "Sports/Leisure"
+      ]
+    },
+    {
+      "name": "Alpha Omega Hawaii",
+      "dateApproved": "9/29/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Religious/Spiritual",
+      "purpose": "A.The primary function of Alpha Omega Hawaii will be to provide students with the opportunity for spiritual growth by interacting with other students who are Christians at UH and B. To encourage academic excellence C. Alpha Omega Hawaii aims to encourage members to uphold the standards held and established by the University policies.",
+      "clubManager": "",
+      "contact": "mmorrell@hawaii.edu",
+      "interests": [
+        "Religious/Spiritual"
+      ]
+    },
+    {
+      "name": "Alpha Sigma Phi",
+      "dateApproved": "10/19/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Fraternity/Sorority",
+      "purpose": "Alpha Sigma Phi strives to becomes the fraternity of choice among undergraduate men coming to the University of Hawaii at Manoa. Alpha Sigma Phi's overall mission is focused on producing academic accomplished, socially acceptable, and physically active leaders consisting of undergraduate men of all backgrounds and beliefs. Our goal every year is to not only improve our organization, but better UHM's Greek Life as a whole through our actions of service and collaboration with philanthropic organizations and other Greek RIOs. ",
+      "clubManager": "",
+      "contact": "senverso@hawaii.edu",
+      "interests": [
+        "Fraternity/Sorority"
+      ]
+    },
+    {
+      "name": "Alpha Gamma Delta Delta Sigma",
+      "dateApproved": "10/26/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Fraternity/Sorority",
+      "purpose": "Alpha Gamma Delta is an international women's organization committed to providing opportunities for personal development, service to others and a space for members to forge their own paths—all through a lifelong spirit of sisterhood. Inspired by the vision and values defined by our Founders, Alpha Gamma Delta challenges members to lead lives of significance that positively impact their communities. Together, we continually work to: Inspire the Woman. Impact the World.",
+      "clubManager": "",
+      "contact": "cbarreca@hawaii.edu",
+      "interests": [
+        "Fraternity/Sorority"
+      ]
+    },
+    {
+      "name": "Alohathon",
+      "dateApproved": "10/26/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Service",
+      "purpose": "Dance marathon to raise money for Kapiolani women’s and children’s hospital",
+      "clubManager": "",
+      "contact": "lynchsf@hawaii.edu",
+      "interests": [
+        "Service"
+      ]
+    },
+    {
+      "name": "American Association of University Women at the University of Hawaiʻi at Mānoa",
+      "dateApproved": "9/8/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Political",
+      "purpose": "The mission of our RIO is to promote the values of AAUW on the UHM campus and in the community. We are working towards equity in society by providing the tools necessary for women to gain economic security, to pursue their education, and advocate for women's rights.",
+      "clubManager": "",
+      "contact": "sulee@hawaii.edu",
+      "interests": [
+        "Political"
+      ]
+    },
+    {
+      "name": "American Hotel & Lodging Association [AHLA]",
+      "dateApproved": "9/29/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "To develop student advocates for America's hospitality and lodging industry through education, valuable experiences and available resources.",
+      "clubManager": "",
+      "contact": "vivianht@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Institute of Aeronautics and Astronautics Student Branch at the University of Hawai'i at Manoa",
+      "dateApproved": "10/19/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "Establish a community for aerospace-related student projects and programs at the UHM and further the purposes and programs of AIAA.",
+      "clubManager": "",
+      "contact": "mhm69@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Institute of Graphic Arts at the University of Hawai'i at Manoa (AIGA UHM)",
+      "dateApproved": "10/19/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The purpose of this organization is to give aspiring students interested in graphic design the opportunity to participate in design related events, get to know their peers, and connect with the larger design community and professionals.",
+      "clubManager": "",
+      "contact": "yanruluo@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Marketing Association at the University of Hawaii at Manoa",
+      "dateApproved": "8/24/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "Our club's purpose is to provide our members with the opportunities to grow socially, philanthropically, and professionally to prepare our members for the work environment after college.",
+      "clubManager": "",
+      "contact": "tj46@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Medical Association/Hawaii Medical Association Branch at JABSOM",
+      "dateApproved": "9/29/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The purpose of the organization shall be to: a) Provide a platform for medical students interested in health-related public policy or medical education standards to interact with peers who share similar interests and goals. b) Provide opportunities for medical students to expand their knowledge of health-related policy or medical education standards by means of workshops, presentations, and online modules. c) Aid medical students in their search for public policy or medical education standards related research or conferences.",
+      "clubManager": "",
+      "contact": "dwc432@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Society of Heating, Refrigerating and Air-Conditioning Engineers",
+      "dateApproved": "2/20/24",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The purpose of this organization is to provide opportunities to people interested in mechanical engineering. These opportunities include learning about systems like HVAC, chillers, etc.; scholarship applications; and networking with current mechanical engineers.",
+      "clubManager": "",
+      "contact": "shibuya4@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Society of Civil Engineers",
+      "dateApproved": "8/24/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The mission of the University of Hawai'i at Manoa ASCE student chapter is to expand the knowledge of aspiring civil engineers through networking, monthly meetings, socials, fundraisers and community service. In addition, it is our goal to give our members the opportunity to participate, as well as compete, in the PSWS for a once-in-a-lifetime engineering experience they will never forget.",
+      "clubManager": "",
+      "contact": "kobyk@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Institute of Architects Students Hawaii Chapter",
+      "dateApproved": "10/26/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "01. We promote excellence in architecture education, and training.02. We foster an appreciation of architecture, design, and related disciplines.03. We enrich communities in a spirit of collaboration.04. We organize students and combine their efforts to advance the art and policy of architecture.",
+      "clubManager": "",
+      "contact": "ajct7@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "American Library Association Student Chapter",
+      "dateApproved": "10/26/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The purposes and aims of the organization are:A. To facilitate and encourage participation in the American Library Association.B. To acquaint members with the goals, objectives, and resources of the American Library Association.C. To encourage professional contacts within the field of librarianship.D. To provide the members of the Student Chapter with official representation to the American Library Association and other relevant organizations.E. To actively promote leadership skills and involvement in professional activities beyond the classroom.F. To provide a local forum for the exchange of ideas and information about trends, issues, and opportunities in the profession.G. To develop skills and relationships that will enable students to have a creative impact on the profession.H. To increase awareness of national issues in librarianship.",
+      "clubManager": "",
+      "contact": "kjmunro@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "Anakbayan Hawai‘i",
+      "dateApproved": "12/6/2023",
+      "expirationDate": "9/30/23",
+      "clubType": "Political",
+      "purpose": "A Hawaii-based youth organization promoting national democracy in the Philippines. We stand in solidarity with anti-imperialist struggles in Hawai‘i.",
+      "clubManager": "",
+      "contact": "ereyes4@hawaii.edu",
+      "interests": [
+        "Political"
+      ]
+    },
+    {
+      "name": "Anthropology Undergraduate Student Association",
+      "dateApproved": "10/26/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The Anthropology Undergraduate Student Association at the University of Hawaiʻi at Mānoa is an organization of students who are passionate about anthropology and want to take their knowledge and involvement to the next step. Objectives of AUSA• The creation of an accessible means for all students interested in anthropology to gain experience and familiarity with the resources that are available to them through the University of Hawaiʻi at Mānoa, the College of Social Sciences, and the Department of Anthropology.• A forum for students to discuss current topics & debates relevant to anthropology and related disciplines.• Provide interested students with guidance, support and practical experience to adequately prepare them for a career and/or graduate/post-baccalaureate studies in anthropology.• Offer opportunities for students to practice their kuleana within the community and learn invaluable skills through a variety of volunteer and learning opportunities.",
+      "clubManager": "",
+      "contact": "paris6@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
+      ]
+    },
+    {
+      "name": "Anime Manga Society of Hawai`i @ UH Manoa",
+      "dateApproved": "11/13/23",
+      "expirationDate": "9/30/24",
+      "clubType": "Leisure/Recreational",
+      "purpose": "AMS is a leisure club and a gathering place for people to discuss and enjoy anime and anime related things.  We are also hooked up with a few other club that we do combined club related activities.  ",
+      "clubManager": "",
+      "contact": "ams@hawaii.edu",
+      "interests": [
+        "Leisure/Recreational"
+      ]
+    },
+    {
+      "name": "Animal Science Club at UH Manoa",
+      "dateApproved": "1/17/24",
+      "expirationDate": "9/30/24",
+      "clubType": "Academic/Professional",
+      "purpose": "The Animal Science Club at the University of Hawaii at Manoa is committed to students who share an interest and passion for animals and livestock production systems. The club accomplishes its mission by organizing events that emphasize education and hands-on experience. The club also participates in community service events.",
+      "clubManager": "",
+      "contact": "garnerla@hawaii.edu",
+      "interests": [
+        "Academic/Professional"
       ]
     }
   ]

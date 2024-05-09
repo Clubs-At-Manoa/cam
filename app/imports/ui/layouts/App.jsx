@@ -6,7 +6,6 @@ import { Roles } from 'meteor/alanning:roles';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import ListClubs from '../pages/ListClubs';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
 // import EditStuff from '../pages/EditStuff';
@@ -22,6 +21,8 @@ import DisplayProfile from '../pages/DisplayProfile';
 import EditProfile from '../pages/EditProfile';
 import DisplayInterest from '../pages/DisplayInterest';
 import Home from '../pages/Home';
+import Clubs from '../pages/Clubs';
+import AddClub from '../pages/AddClub';
 // import DisplayInterest from '../pages/DisplayInterest';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -42,7 +43,8 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/list" element={<ProtectedRoute><ListClubs /></ProtectedRoute>} />
+          <Route path="/clubs" element={<Clubs />} />
+          <Route path="/addclub" element={<AddClub />} />
           <Route path="/createprofile" element={<ProtectedRoute><CreateProfile /></ProtectedRoute>} />
           <Route path="/displayprofile" element={<ProtectedRoute><DisplayProfile /></ProtectedRoute>} />
           <Route path="/editprofile" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
