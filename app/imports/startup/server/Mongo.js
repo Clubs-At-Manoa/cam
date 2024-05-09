@@ -6,7 +6,7 @@ import { ClubsInterests } from '../../api/clubs/ClubsInterests';
 import { Profiles } from '../../api/profiles/Profiles';
 import { ProfilesClubs } from '../../api/profiles/ProfilesClubs';
 import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
-import { Interests } from '../../api/interests/Interests';
+import { Interests } from '../../api/Interests/Interests';
 
 /* eslint-disable no-console */
 const addData = (data) => {
