@@ -4,7 +4,7 @@ import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { _ } from 'meteor/underscore';
-import { Interests } from '../../api/interests/Interests';
+import { Interests } from '../../api/Interests/Interests';
 import { Profiles } from '../../api/profiles/Profiles';
 import { ProfilesInterests } from '../../api/profiles/ProfilesInterests';
 import { ProfilesClubs } from '../../api/profiles/ProfilesClubs';
