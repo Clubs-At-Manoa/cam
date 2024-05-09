@@ -21,6 +21,23 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto justify-content-start">
             {currentUser ? ([
+              <Nav.Link id="homepage" as={NavLink} to="/home" key="home">Home</Nav.Link>,
+              <Nav.Link id="profiles" as={NavLink} to="/profiles" key="profiles">Profiles</Nav.Link>,
+            ]) : ''}
+            <Nav.Link id="list-clubs-nav" as={NavLink} to="/list" key="list">Clubs</Nav.Link>
+            <Nav.Link id="interests" as={NavLink} to="/interests" key="interests">Interests</Nav.Link>
+            {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
+              <Nav.Link id="list-clubs-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>,
+              <Nav.Link id="add-clubs-nav" as={NavLink} to="/add" key="add">Add Club</Nav.Link>,
+              <Nav.Link id="edit-clubs-nav" as={NavLink} to="/edit" key="edit">Edit Club</Nav.Link>,
+              <Nav.Link id="edit-profiles-nav" as={NavLink} to="/edit" key="edit">Edit Profiles</Nav.Link>,
+            ]) : ''}
+            {Roles.userIsInRole(Meteor.userId(), 'clubManager') ? ([
+              <Nav.Link id="add-clubs-nav" as={NavLink} to="/add" key="add">Add Club</Nav.Link>,
+              <Nav.Link id="edit-clubs-nav" as={NavLink} to="/edit" key="edit">Edit Club</Nav.Link>,
+              <Nav.Link id="profiles" as={NavLink} to="/profiles" key="profiles">Profiles</Nav.Link>
+            ]) : ''}
+           
               <Nav.Link as={NavLink} to="/add" key="add">Add Interest</Nav.Link>,
               <Nav.Link as={NavLink} to="/list" key="list">Organizations</Nav.Link>,
               <Nav.Link as={NavLink} to="/clubs" key="clubs">Clubs</Nav.Link>, // Added link for Clubs page
