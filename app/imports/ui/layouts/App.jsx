@@ -20,8 +20,9 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import CreateProfile from '../pages/CreateProfile';
 import DisplayProfile from '../pages/DisplayProfile';
 import EditProfile from '../pages/EditProfile';
-import Interest from '../pages/Interest';
+import DisplayInterest from '../pages/DisplayInterest';
 import Home from '../pages/Home';
+// import DisplayInterest from '../pages/DisplayInterest';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -45,7 +46,7 @@ const App = () => {
           <Route path="/createprofile" element={<ProtectedRoute><CreateProfile /></ProtectedRoute>} />
           <Route path="/displayprofile" element={<ProtectedRoute><DisplayProfile /></ProtectedRoute>} />
           <Route path="/editprofile" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
-          <Route path="/interest" element={<ProtectedRoute><Interest /></ProtectedRoute>} />
+          <Route path="/displayinterest" element={<ProtectedRoute><DisplayInterest /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminProtectedRoute ready={ready}><ListStuffAdmin /></AdminProtectedRoute>} />
