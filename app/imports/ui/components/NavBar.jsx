@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
-import { Image, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BoxArrowRight, PersonFill, PersonPlusFill } from 'react-bootstrap-icons';
 
 const NavBar = () => {
@@ -11,13 +11,11 @@ const NavBar = () => {
   const { currentUser, loggedIn } = useTracker(() => ({
     currentUser: Meteor.user() ? Meteor.user().username : '',
   }), []);
-  const menuStyle = { marginBottom: '0px' };
-  const navbarClassName = loggedIn ? 'bg-dark' : 'bg-light';
   return (
-    <Navbar expand="lg" style={menuStyle} className={navbarClassName}>
-      <Container className="align-items-center">
-        <Navbar.Brand as={NavLink} to="/" className="align-items-center">
-          <span style={{ fontWeight: 800, fontSize: '24px' }}><Image src="/images/logo.png" width={50} style={{ marginBottom: 3 }} /> C.A.M</span>
+    <Navbar bg="light" expand="lg" className="align-items-center">
+      <Container>
+        <Navbar.Brand as={NavLink} to="/">
+          <h2>Clubs At Manoa</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -26,14 +24,12 @@ const NavBar = () => {
               <Nav.Link id="homepage" as={NavLink} to="/home" key="home">Home</Nav.Link>,
               <Nav.Link id="profiles" as={NavLink} to="/profiles" key="profiles">Filter</Nav.Link>,
             ]) : ''}
-            <Nav.Link id="list-stuff-nav" as={NavLink} to="/list" key="list">Clubs</Nav.Link>,
             <Nav.Link as={NavLink} to="/clubs" key="clubs">Clubs</Nav.Link>,
             <Nav.Link id="interests" as={NavLink} to="/interests" key="interests">Interests</Nav.Link>
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? ([
               <Nav.Link id="list-stuff-admin-nav" as={NavLink} to="/admin" key="admin">Admin</Nav.Link>,
               <Nav.Link id="add-stuff-nav" as={NavLink} to="/add" key="add">Add Club</Nav.Link>,
             ]) : ''}
-
           </Nav>
           <Nav className="justify-content-end">
             {currentUser === '' ? (
