@@ -35,7 +35,7 @@ const EditProfile = () => {
     const { contactEmail, firstName, lastName, bio, title, interest } = data;
     Profiles.collection.update(_id, { $set: { contactEmail, firstName, lastName, bio, title, interest } }, (error) => (error ?
       swal('Error', error.message, 'error') :
-      swal('Success', 'Item updated successfully', 'success')));
+      swal('Success', 'Profile updated successfully', 'success')));
   };
 
   return ready ? (

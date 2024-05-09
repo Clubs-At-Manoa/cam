@@ -34,7 +34,18 @@ const DisplayInterest = () => {
           <Table striped bordered hover>
             <thead>
               <tr>
-                <th>Interest</th>
+                <th>Academic/Professional</th>
+                <th>Ethnic/Cultural</th>
+                <th>Fraternity/Sorority</th>
+                <th>Honorary Society</th>
+                <th>Leisure/Recreational</th>
+              </tr>
+              <tr>
+                <th>Political</th>
+                <th>Religious/Spiritual</th>
+                <th>Service</th>
+                <th>Sports/Leisure</th>
+                <th>Student Affairs</th>
               </tr>
             </thead>
             <tbody>
