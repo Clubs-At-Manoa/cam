@@ -21,6 +21,7 @@ import CreateProfile from '../pages/CreateProfile';
 import DisplayProfile from '../pages/DisplayProfile';
 import EditProfile from '../pages/EditProfile';
 import Interest from '../pages/Interest';
+import Home from '../pages/Home';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -39,7 +40,7 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
-          <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
+          <Route path="/home" element={<Home />} />
           <Route path="/list" element={<ProtectedRoute><ListClubs /></ProtectedRoute>} />
           <Route path="/createprofile" element={<ProtectedRoute><CreateProfile /></ProtectedRoute>} />
           <Route path="/displayprofile" element={<ProtectedRoute><DisplayProfile /></ProtectedRoute>} />
