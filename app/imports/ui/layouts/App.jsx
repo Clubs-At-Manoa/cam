@@ -6,7 +6,6 @@ import { Roles } from 'meteor/alanning:roles';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import ListClubs from '../pages/ListClubs';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
 // import EditStuff from '../pages/EditStuff';
@@ -23,7 +22,7 @@ import EditProfile from '../pages/EditProfile';
 import DisplayInterest from '../pages/DisplayInterest';
 import Home from '../pages/Home';
 import Clubs from '../pages/Clubs';
-import AddClub from "../pages/AddClub";
+import AddClub from '../pages/AddClub';
 // import DisplayInterest from '../pages/DisplayInterest';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
