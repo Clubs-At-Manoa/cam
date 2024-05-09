@@ -19,6 +19,7 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import CreateProfile from '../pages/CreateProfile';
 import EditProfile from '../pages/EditProfile';
 import Clubs from '../pages/Clubs';
+import AddClub from "../pages/AddClub";
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
           <Route path="/createprofile" element={<ProtectedRoute><CreateProfile /></ProtectedRoute>} />
           <Route path="/clubs" element={<Clubs />} />
+          <Route path="/addclub" element={<AddClub />} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
           <Route path="/edit/:_id" element={<ProtectedRoute><EditProfile /></ProtectedRoute>} />
