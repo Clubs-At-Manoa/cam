@@ -36,6 +36,7 @@ export const PageIDs = {
   addProjectPage: 'addProjectPage',
   filterPage: 'filterPage',
   homePage: 'homePage',
+  clubsPage: 'clubsPage',
   interestsPage: 'interestsPage',
   landingPage: 'landingPage',
   notAuthorizedPage: 'notAuthorizedPage',

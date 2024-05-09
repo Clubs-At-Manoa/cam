@@ -5,13 +5,13 @@ import SimpleSchema from 'simpl-schema';
 class ProfilesProjectsCollection {
   constructor() {
     // The name of this collection.
-    this.name = 'ProfilesProjectsCollection';
+    this.name = 'ProfilesClubsCollection';
     // Define the Mongo collection.
     this.collection = new Mongo.Collection(this.name);
     // Define the structure of each document in the collection.
     this.schema = new SimpleSchema({
       profile: String,
-      project: String,
+      clubs: String,
     });
     // Ensure collection documents obey schema.
     this.collection.attachSchema(this.schema);
