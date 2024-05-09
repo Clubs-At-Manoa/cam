@@ -8,7 +8,6 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddStuff from '../pages/AddStuff';
-// import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
 import SignOut from '../pages/SignOut';
@@ -23,7 +22,6 @@ import DisplayInterest from '../pages/DisplayInterest';
 import Home from '../pages/Home';
 import Clubs from '../pages/Clubs';
 import AddClub from '../pages/AddClub';
-// import DisplayInterest from '../pages/DisplayInterest';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => {
