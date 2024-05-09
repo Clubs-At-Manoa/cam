@@ -29,18 +29,18 @@ const DisplayProfile = () => {
       <Row className="justify-content-center">
         <Col md={7}>
           <Col className="text-center">
-            <h2>List Stuff</h2>
+            <h2>Your Profile</h2>
           </Col>
           <Table striped bordered hover>
             <thead>
               <tr>
-                <th>Contact email</th>
+                <th>Contact Email</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Bio</th>
                 <th>Title</th>
-                <th>interest</th>
-                <th>Edit</th>
+                <th>Interest</th>
+                <th>Edit Profile</th>
               </tr>
             </thead>
             <tbody>
