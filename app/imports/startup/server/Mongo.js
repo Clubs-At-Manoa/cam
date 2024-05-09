@@ -99,11 +99,3 @@ if (Meteor.users.find().count() === 0) {
   }
 }
 
-/** If the loadAssetsFile field in settings.development.json is true, then load data from a private file. */
-if (Meteor.settings.loadAssetsFile && Meteor.users.find().count() < 7) {
-  const assetsFileName = 'data.json';
-  console.log(`Loading data from private/${assetsFileName}`);
-  const jsonData = JSON.parse(Assets.getText(assetsFileName));
-  jsonData.profiles.forEach(profile => addProfile(profile));
-  jsonData.clubs.forEach(club => addClub(club)); // Assuming the structure includes clubs.
-}
