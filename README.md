@@ -1,3 +1,3 @@
-[![ci-meteor-application-template-react](https://github.com/Clubs-At-Manoa/cam/actions/workflows/ci.yml/badge.svg)](https://github.com/Clubs-At-Manoa/cam-react/actions/workflows/ci.yml)
+[![ci-clubs-at-manoa](https://github.com/Clubs-At-Manoa/cam/actions/workflows/ci.yml/badge.svg)](https://github.com/Clubs-At-Manoa/cam/actions/workflows/ci.yml)
 
-For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
+For details, please see https://clubs-at-manoa.github.io/
